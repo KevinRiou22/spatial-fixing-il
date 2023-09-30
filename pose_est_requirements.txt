@@ -1,0 +1,8 @@
+torch
+tqdm
+tensorboardX
+einops
+timm
+easydict
+tensorboard
+torchsummary

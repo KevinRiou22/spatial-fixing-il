@@ -1,0 +1,1 @@
+python run_h36m_full_pose.py --cfg ./cfg/submit/config_full_pose_test_12.yaml --gpu 0  --eval --test_success_rate --checkpoint /home/facebooksurrounduser/Documents/RLBench_works/pose_obj_3d_from_image/checkpoint/submit/config_full_pose_12_2023-02-28-10-48/model.bin --gpu 0 --n_frames 1 --eval_batch_size 1 --eval_n_frames 1

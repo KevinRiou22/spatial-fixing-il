@@ -1,0 +1,20 @@
+{
+  "name": "no_grip_reach_dissociation",
+  "env": "RLBench",
+  "action_mode": "ABS_EE_POSE_PLAN_WORLD_FRAME",
+  "action_dim":8,
+  "ee_state_dim":8,
+  "obs_dim": [256, 256, 3],
+  "max_seq_len":1024,
+  "n_cameras":2,
+  "get_depth": false,
+  "cams":["left_shoulder", "right_shoulder", "overhead", "front"],
+  "train_task_ids": [0, 41, 54, 12],
+  "test_task_ids": [],
+  "n_variation_per_task": 1,
+  "n_ex_per_variation": 300,
+  "headless_generation": true,
+  "registered_actions": ["joint_velocities", "joint_positions", "joint_forces", "gripper_pose"],
+  "use_object_quaternions": false,
+  "get_segmentations": true
+}

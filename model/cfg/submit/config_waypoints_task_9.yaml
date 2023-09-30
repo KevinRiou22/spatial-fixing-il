@@ -1,0 +1,34 @@
+GPU: ['1']
+NETWORK:
+  TRANSFORM_DIM: 4
+  TEMPORAL_LENGTH: 7
+  DIM_JOINT: 3
+  USE_GT_TRANSFORM: False
+  NUM_CHANNELS: 512
+  AFTER_MHF_DIM: 1024
+  T_FORMER:
+    NUM_CHANNELS: 512
+    NUM_LAYERS: 4
+  TYPE: 'MHT'
+  ROT_MODEL:
+    NUM_LAYERS: 1
+    NUM_CHANNELS: 256
+  M_FORMER:
+    GT_TRANSFORM_RES: False
+TEST:
+  NUM_FRAMES: [7]
+  NUM_VIEWS: [4]
+TRAIN:
+  INTER_LOSS_WEIGHT: [0.1, 0.4]
+  CONSIS_LOSS_WEIGHT: 0.01
+  RESUME_CHECKPOINT: '/home/lambda-ipi/pose3d/pose_obj_3d/checkpoint/submit/config_full_pose_groc_2023-02-26-16-53/model.bin'
+  RESUME: True
+OBJ_POSE_DATA:
+  PROJ_Frm_3DCAM: False
+  DIM_JOINT: 3
+  SUBJECTS_TRAIN: ['T9']
+  SUBJECTS_TEST: ['T9']
+  NUM_JOINTS: 6
+
+
+  

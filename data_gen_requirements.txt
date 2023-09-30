@@ -1,0 +1,7 @@
+Pillow
+natsort
+pyquaternion
+opencv-python-headless
+scipy
+h5py
+matplotlib

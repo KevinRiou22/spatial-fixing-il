@@ -1,0 +1,1 @@
+python -m pdb run_h36m.py --cfg ./cfg/submit/mht_plain_gt_trans_t_7_no_res.yaml --eval --checkpoint ./checkpoint/submit/mht_plain_gt_trans_t_7_no_res_2022-10-22-11-20/model.bin --gpu 0 --n_frames 7  --eval_batch_size 360 --eval_n_frames 7
